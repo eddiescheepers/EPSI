@@ -147,7 +147,7 @@ img {
 .showcase {
     grid-area: showcase;
     min-height: 100px;
-    background: url(images/blur-bright-bulbs.jpg);
+    background: url(blur-bright-bulbs.jpg);
     background-size: cover;
     background-position: center;
     padding: 3rem;
