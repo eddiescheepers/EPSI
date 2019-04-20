@@ -1,0 +1,245 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--dark);
+}
+
+body {
+    margin: 30px 50px;
+    font-family: monserrat, robot, sans-serif;
+    font-size: 0.8em;
+    background-color: rgb(235, 232, 232);
+    line-height: 1.4;
+}
+
+/*.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}  */
+
+/* ----- transparent buttons  ------- */
+
+/* ------ Read More Button ------- */
+.btn-read {
+    display: inline-block;
+    
+    position: center;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    color: white;
+    margin: 1em 0;
+    border-radius: 2px;
+    border: 1.5px solid rgb(173, 171, 171);
+    position: center;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    
+}
+
+.btn-read:hover {
+    
+    border: 1.5px solid rgb(89, 89, 90);
+    background: transparent;
+}
+
+.btn-read:active {
+    border: 1px solid black;
+    background: #3f3e3e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* ------ Send Button ------- */
+
+.btn-send {
+    display: inline-block;
+    position: center;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    color: rgb(2, 2, 2);
+    margin: 1em 0;
+    border-radius: 2px;
+    border: 1.5px solid rgb(173, 171, 171);
+    position: center;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    
+}
+
+.btn-send:hover {
+    
+    border: 1.5px solid rgb(89, 89, 90);
+    background: transparent;
+}
+
+.btn-send:active {
+    border: 1px solid black;
+    background: #5f5e5e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* ----- Navigation ---- */
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: auto auto auto;
+
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* ---- Top Container ----*/
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-c';
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 100px;
+    background: url(images/blur-bright-bulbs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow); */
+}
+
+.showcase h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+
+.showcase p {
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: var(--light);
+}
+
+.top-box-b .industrialList {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;;
+}
+
+.top-box-c .buildingList {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.top-box-d .projectList {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* --- Top-Box --- */
+
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+.top-box-c {
+    grid-area: top-box-c;
+}
+
+.top-box-f {
+    
+}
+
+
+/* ------ Text Field ------- */
+
+
+input[type=text] {
+    display: inline-block;
+    width: 80%;
+    padding: 12px 20px;
+    border: 1px #ccc;
+    border-radius: 2px;
+    background-color: rgb(167, 167, 163);
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+input[type=text]:hover {
+    border-color: 1px solid rgb(2, 2, 75);
+    background-color: rgb(224, 219, 219);
+}
+
+::placeholder {
+    color: black;
+}
+
+
+
